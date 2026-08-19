@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as DesignSystemRouteImport } from './routes/design-system'
 import { Route as JournalRouteImport } from './routes/journal'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as StudioRouteImport } from './routes/studio'
 import { Route as TermsRouteImport } from './routes/terms'
@@ -62,6 +63,11 @@ const JournalRoute = JournalRouteImport.update({
   path: '/journal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -92,6 +98,7 @@ export interface FileRoutesByFullPath {
   '/cookies': typeof CookiesRoute
   '/design-system': typeof DesignSystemRoute
   '/journal': typeof JournalRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/studio': typeof StudioRoute
   '/terms': typeof TermsRoute
@@ -106,6 +113,7 @@ export interface FileRoutesByTo {
   '/cookies': typeof CookiesRoute
   '/design-system': typeof DesignSystemRoute
   '/journal': typeof JournalRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/studio': typeof StudioRoute
   '/terms': typeof TermsRoute
@@ -121,6 +129,7 @@ export interface FileRoutesById {
   '/cookies': typeof CookiesRoute
   '/design-system': typeof DesignSystemRoute
   '/journal': typeof JournalRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/studio': typeof StudioRoute
   '/terms': typeof TermsRoute
@@ -137,6 +146,7 @@ export interface FileRouteTypes {
     | '/cookies'
     | '/design-system'
     | '/journal'
+    | '/pricing'
     | '/privacy'
     | '/studio'
     | '/terms'
@@ -151,6 +161,7 @@ export interface FileRouteTypes {
     | '/cookies'
     | '/design-system'
     | '/journal'
+    | '/pricing'
     | '/privacy'
     | '/studio'
     | '/terms'
@@ -165,6 +176,7 @@ export interface FileRouteTypes {
     | '/cookies'
     | '/design-system'
     | '/journal'
+    | '/pricing'
     | '/privacy'
     | '/studio'
     | '/terms'
@@ -180,6 +192,7 @@ export interface RootRouteChildren {
   CookiesRoute: typeof CookiesRoute
   DesignSystemRoute: typeof DesignSystemRoute
   JournalRoute: typeof JournalRoute
+  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   StudioRoute: typeof StudioRoute
   TermsRoute: typeof TermsRoute
@@ -244,6 +257,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof JournalRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -284,6 +304,7 @@ const rootRouteChildren: RootRouteChildren = {
   CookiesRoute: CookiesRoute,
   DesignSystemRoute: DesignSystemRoute,
   JournalRoute: JournalRoute,
+  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   StudioRoute: StudioRoute,
   TermsRoute: TermsRoute,

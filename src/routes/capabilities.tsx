@@ -39,11 +39,11 @@ function CapabilitiesPage() {
             build.
           </>
         }
-        lead="Five disciplines, one team. We move from finding the right thing to build through to running it reliably in production."
+        lead="Six disciplines, one team. We move from finding the right thing to build through to helping it reach the right people and run reliably in production."
       />
 
       <Section
-        eyebrow="The five layers"
+        eyebrow="The six layers"
         title="One accountable team across every layer of the system."
         lead="Each layer is a discipline in its own right. We run them together so nothing gets handed over and lost."
       >

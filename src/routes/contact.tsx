@@ -31,7 +31,7 @@ function ContactPage() {
   return (
     <Page>
       <PageHeader
-        index="06 / Contact"
+        index="07 / Contact"
         title={
           <>
             Tell us what you're

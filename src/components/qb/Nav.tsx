@@ -55,6 +55,13 @@ export function Nav() {
           >
             Work
           </Link>
+          <Link
+            to="/pricing"
+            onMouseEnter={() => setMenu(null)}
+            className="flex items-center border-r border-border px-7 text-[0.74rem] font-medium uppercase tracking-[0.11em] text-foreground/80 transition-all duration-300 hover:bg-accent/[0.06] hover:text-accent"
+          >
+            Pricing
+          </Link>
           <button
             type="button"
             onMouseEnter={() => setMenu("approach")}
@@ -185,6 +192,7 @@ export function Nav() {
           {[
             { label: "Services", to: "/capabilities" },
             { label: "Work", to: "/work" },
+            { label: "Pricing", to: "/pricing" },
             { label: "Approach", to: "/approach" },
             { label: "Studio", to: "/studio" },
             { label: "Journal", to: "/journal" },

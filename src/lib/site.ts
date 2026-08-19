@@ -28,6 +28,7 @@ export const COMPANY = {
 export const NAV = [
   { label: "Work", to: "/work" },
   { label: "Services", to: "/capabilities" },
+  { label: "Pricing", to: "/pricing" },
   { label: "Approach", to: "/approach" },
   { label: "Studio", to: "/studio" },
   { label: "Journal", to: "/journal" },
@@ -138,8 +139,8 @@ export const STATS = [
   },
   {
     value: "05",
-    label: "Capability layers",
-    line: "Product, design, engineering, intelligence and infrastructure.",
+    label: "Service layers",
+    line: "Product, design, engineering, intelligence, infrastructure and digital marketing.",
   },
   {
     value: "07",
