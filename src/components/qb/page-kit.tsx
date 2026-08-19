@@ -204,7 +204,7 @@ export function CtaBand({
               to="/capabilities"
               className="hover-lift rounded-[10px] border border-border bg-background px-6 py-3.5 text-sm font-medium"
             >
-              See capabilities
+              See services
             </Link>
           </div>
         </Reveal>

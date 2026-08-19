@@ -27,7 +27,7 @@ export const COMPANY = {
 
 export const NAV = [
   { label: "Work", to: "/work" },
-  { label: "Capabilities", to: "/capabilities" },
+  { label: "Services", to: "/capabilities" },
   { label: "Approach", to: "/approach" },
   { label: "Studio", to: "/studio" },
   { label: "Journal", to: "/journal" },
@@ -81,6 +81,13 @@ export const CAPABILITIES = [
     title: "Infrastructure",
     line: "Make it reliable.",
     items: ["Cloud", "Security", "DevOps", "Monitoring", "Scale"],
+  },
+  {
+    id: "digital-marketing",
+    index: "06",
+    title: "Digital Marketing",
+    line: "Help the right people find you.",
+    items: ["SEO", "Content strategy", "Paid media", "Social media", "Analytics"],
   },
 ] as const;
 

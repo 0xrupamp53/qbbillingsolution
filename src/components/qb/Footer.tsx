@@ -27,7 +27,7 @@ export function Footer() {
             </div>
 
             <div>
-              <div className="label-mono">Capabilities</div>
+              <div className="label-mono">Services</div>
               <ul className="mt-5 space-y-3">
                 {CAPABILITIES.map((c) => (
                   <li key={c.id}>

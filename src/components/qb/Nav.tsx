@@ -45,7 +45,7 @@ export function Nav() {
             onMouseEnter={() => setMenu("capabilities")}
             className="flex items-center gap-2 border-r border-border px-7 text-[0.74rem] font-medium uppercase tracking-[0.11em] text-foreground/80 transition-all duration-300 hover:bg-accent/[0.06] hover:text-accent"
           >
-            Capabilities
+            Services
             <Chevron open={menu === "capabilities"} />
           </button>
           <Link
@@ -151,7 +151,7 @@ export function Nav() {
                   to="/capabilities"
                   className="mt-5 inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2.5 text-[0.72rem] font-medium text-accent-foreground"
                 >
-                  Explore capabilities →
+                  Explore services →
                 </Link>
               </div>
               <div className="grid grid-cols-3 gap-8">
@@ -183,7 +183,7 @@ export function Nav() {
       >
         <nav className="flex flex-col px-5 py-6" aria-label="Mobile">
           {[
-            { label: "Capabilities", to: "/capabilities" },
+            { label: "Services", to: "/capabilities" },
             { label: "Work", to: "/work" },
             { label: "Approach", to: "/approach" },
             { label: "Studio", to: "/studio" },

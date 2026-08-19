@@ -101,7 +101,7 @@ export function CapabilitiesSection() {
   return (
     <section className="border-t border-border px-6 py-32 md:px-10 md:py-44">
       <div className="mx-auto max-w-[1600px]">
-        <div className="label-mono">02 / Capabilities</div>
+        <div className="label-mono">02 / Services</div>
         <Reveal>
           <h2 className="display mt-10 max-w-3xl text-[clamp(2.2rem,6vw,5rem)]">
             One team across product, design and engineering.

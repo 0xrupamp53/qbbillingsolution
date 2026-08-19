@@ -1008,7 +1008,7 @@ export function Integrations() {
           </p>
           <div className="mt-10">
             <PrimaryCta to="/capabilities" variant="outline">
-              View all capabilities
+              View all services
             </PrimaryCta>
           </div>
         </div>
@@ -1147,7 +1147,7 @@ export function FaqChat() {
 const INSIGHT_TABS = [
   { label: "Journal", icon: "◧" },
   { label: "Approach", icon: "▤" },
-  { label: "Capabilities", icon: "◇" },
+  { label: "Services", icon: "◇" },
 ] as const;
 
 export function Insights() {

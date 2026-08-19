@@ -4,7 +4,7 @@ import { Card, CardGrid, CtaBand, Section } from "@/components/qb/page-kit";
 import { Reveal } from "@/components/qb/motion-primitives";
 import { CAPABILITIES, TECHNOLOGY } from "@/lib/site";
 
-const TITLE = "Capabilities — QB Billing Solution";
+const TITLE = "Services — QB Billing Solution";
 const DESCRIPTION =
   "Product strategy, design, software engineering, AI and infrastructure — delivered by one team from discovery to launch.";
 
@@ -31,7 +31,7 @@ function CapabilitiesPage() {
   return (
     <Page>
       <PageHeader
-        index="02 / Capabilities"
+        index="02 / Services"
         title={
           <>
             What we
