@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "QB Billing Solution designs and engineers digital products, software platforms and AI systems for ambitious businesses.",
+          "QB Billing Solution provides business-focused software and technology services across product strategy, UX/UI, web and mobile apps, SaaS, APIs, AI, automation, cloud infrastructure, DevOps, security, monitoring and digital marketing.",
       },
       { property: "og:site_name", content: "QB Billing Solution" },
       { property: "og:type", content: "website" },

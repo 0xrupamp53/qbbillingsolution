@@ -14,6 +14,8 @@ export const COMPANY = {
   descriptor: "Product Engineering / Digital Systems",
   positioning:
     "We design and engineer the digital products, software and intelligent systems that help businesses operate, sell and scale.",
+  valueProposition:
+    "Business-focused software and technology services spanning product strategy, UX/UI design, web and mobile apps, SaaS and backend engineering, APIs, AI, automation, cloud infrastructure, DevOps, security, monitoring and digital marketing.",
   contactEmail: import.meta.env["VITE_CONTACT_EMAIL"] ?? "info@qbbillingsolution.com",
   contactPhone: "+1 18005767798",
   registeredAddress: {

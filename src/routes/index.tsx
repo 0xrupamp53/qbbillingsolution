@@ -21,7 +21,7 @@ import { COMPANY } from "@/lib/site";
 
 const TITLE = "QB Billing Solution — Product Engineering & Digital Systems";
 const DESCRIPTION =
-  "QB Billing Solution designs and engineers custom digital products, software platforms, AI systems and business technology for ambitious businesses.";
+  "QB Billing Solution provides business-focused software and technology services across product strategy, UX/UI, web and mobile apps, SaaS, APIs, AI, automation, cloud infrastructure, DevOps, security, monitoring and digital marketing.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

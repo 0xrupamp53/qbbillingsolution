@@ -390,7 +390,7 @@ export function Hero() {
           className="mx-auto mt-6 max-w-2xl text-[1.05rem] leading-relaxed text-muted-foreground"
           style={step(1)}
         >
-          {COMPANY.positioning}
+          {COMPANY.valueProposition} We design, develop, deploy and maintain the systems that help businesses grow.
         </p>
         <div
           className="mt-7 flex flex-wrap items-center justify-center gap-3"
