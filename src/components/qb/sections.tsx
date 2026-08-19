@@ -372,7 +372,7 @@ export function WorkIndex() {
       onMouseMove={(e) => setPos({ x: e.clientX, y: e.clientY })}
     >
       <div className="mx-auto max-w-[1600px]">
-        <div className="label-mono grid grid-cols-[1fr_auto_auto] gap-8 border-b border-border pb-4">
+        <div className="label-mono grid grid-cols-[minmax(0,1fr)_auto_auto] gap-3 border-b border-border pb-4 sm:gap-8">
           <span>Project</span>
           <span className="w-20">Year</span>
           <span className="w-28 text-right">Type</span>
@@ -384,13 +384,13 @@ export function WorkIndex() {
             data-cursor="VIEW PROJECT ↗"
             onMouseEnter={() => setHover(i)}
             onMouseLeave={() => setHover(null)}
-            className="grid grid-cols-[1fr_auto_auto] items-center gap-8 border-b border-border transition-all duration-500 [transition-timing-function:var(--ease-expo)]"
+            className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-3 border-b border-border transition-all duration-500 [transition-timing-function:var(--ease-expo)] sm:gap-8"
             style={{
               paddingBlock: hover === i ? "2.6rem" : "1.8rem",
               color: hover === i ? "var(--foreground)" : "var(--muted-foreground)",
             }}
           >
-            <span className="display text-[clamp(1.4rem,3.4vw,2.8rem)]">
+            <span className="display min-w-0 text-[clamp(1.25rem,3.4vw,2.8rem)]">
               {row.name}
               <span
                 className="ml-4 inline-block text-accent transition-all duration-500"
@@ -402,8 +402,8 @@ export function WorkIndex() {
                 ↗
               </span>
             </span>
-            <span className="label-mono w-20">{row.year}</span>
-            <span className="label-mono w-28 text-right">{row.type}</span>
+            <span className="label-mono w-14 sm:w-20">{row.year}</span>
+            <span className="label-mono w-20 text-right sm:w-28">{row.type}</span>
           </div>
         ))}
 

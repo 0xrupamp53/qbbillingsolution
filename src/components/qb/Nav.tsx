@@ -6,11 +6,11 @@ type MenuKey = "capabilities" | "approach" | null;
 
 function Logo() {
   return (
-    <Link to="/" aria-label={COMPANY.name} className="flex items-center gap-2.5">
+    <Link to="/" aria-label={COMPANY.name} className="flex min-w-0 items-center gap-2.5">
       <span className="flex h-7 w-7 items-center justify-center rounded-[7px] bg-accent text-[0.72rem] font-semibold tracking-tight text-accent-foreground">
         QB
       </span>
-      <span className="display text-[1.15rem] leading-none tracking-tight">
+      <span className="display truncate text-[1rem] leading-none tracking-tight sm:text-[1.15rem]">
         QB Billing Solution
       </span>
     </Link>
@@ -33,9 +33,9 @@ export function Nav() {
       className="sticky top-0 z-[70] border-b border-border bg-background"
       onMouseLeave={() => setMenu(null)}
     >
-      <div className="mx-auto flex h-[88px] w-full max-w-[1690px] items-stretch">
+      <div className="mx-auto flex h-[72px] w-full max-w-[1690px] items-stretch md:h-[88px]">
         <div className="hidden w-[96px] shrink-0 border-r border-border md:block" />
-        <div className="flex items-center border-r border-border px-5 md:px-8">
+        <div className="flex min-w-0 items-center border-r border-border px-4 sm:px-5 md:px-8">
           <Logo />
         </div>
 
@@ -83,7 +83,7 @@ export function Nav() {
           ))}
         </nav>
 
-        <div className="flex flex-1 items-center justify-end gap-3 px-5 md:px-8">
+        <div className="flex flex-1 items-center justify-end gap-3 px-4 sm:px-5 md:px-8">
           <Link
             to="/contact"
             className="group hidden items-center gap-2.5 rounded-[6px] bg-accent px-5 py-3 text-[0.78rem] font-medium text-accent-foreground transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-[0_14px_30px_-16px_oklch(0.2_0.05_275/70%)] md:inline-flex"
@@ -175,7 +175,7 @@ export function Nav() {
 
       {/* Mobile */}
       <div
-        className="fixed inset-x-0 top-[88px] z-[69] overflow-hidden border-b border-border bg-background lg:hidden"
+        className="fixed inset-x-0 top-[72px] z-[69] overflow-hidden border-b border-border bg-background lg:hidden md:top-[88px]"
         style={{
           maxHeight: open ? "80vh" : 0,
           transition: "max-height 520ms var(--ease-expo)",

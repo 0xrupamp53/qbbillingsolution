@@ -161,11 +161,22 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans-family);
+    overflow-x: hidden;
   }
 
   ::selection {
     background: var(--support);
     color: var(--foreground);
+  }
+}
+
+@media (max-width: 767px) {
+  .display {
+    overflow-wrap: break-word;
+  }
+
+  .grid-field {
+    background-size: 48px 48px;
   }
 }
 
