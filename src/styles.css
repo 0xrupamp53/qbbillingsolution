@@ -1,0 +1,462 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+/*
+ * QB BILLING SOLUTIONS — Design System
+ * Light editorial platform system: white canvas, navy action colour,
+ * serif display with italic accent, mint highlight, soft grid field.
+ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-support: var(--support);
+  --color-detail: var(--detail);
+  --color-border: var(--border);
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-paper-foreground: var(--paper-foreground);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-border: var(--ink-border);
+
+  /* shadcn compatibility */
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--background);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--accent);
+  --color-primary-foreground: var(--accent-foreground);
+  --color-secondary: var(--surface);
+  --color-secondary-foreground: var(--foreground);
+  --color-accent-hover: var(--accent);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: oklch(0.98 0 0);
+  --color-input: var(--border);
+  --color-ring: var(--accent);
+  --color-sidebar: var(--surface);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--accent);
+  --color-sidebar-primary-foreground: var(--accent-foreground);
+  --color-sidebar-accent: var(--elevated);
+  --color-sidebar-accent-foreground: var(--foreground);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--accent);
+
+  --font-display: var(--font-display-family);
+  --font-sans: var(--font-sans-family);
+  --font-mono: var(--font-mono-family);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+}
+
+:root,
+[data-theme="a"] {
+  --background: oklch(1 0 0);
+  --surface: oklch(0.976 0.002 250);
+  --elevated: oklch(0.955 0.003 250);
+  --foreground: oklch(0.205 0.014 275);
+  --muted: oklch(0.94 0.004 250);
+  --muted-foreground: oklch(0.53 0.012 272);
+  --accent: oklch(0.36 0.135 272);
+  --accent-foreground: oklch(0.99 0 0);
+  --support: oklch(0.93 0.055 152);
+  --detail: oklch(0.78 0.07 200);
+  --border: oklch(0.2 0.01 275 / 11%);
+  --paper: oklch(0.22 0.06 272);
+  --paper-deep: oklch(0.17 0.05 272);
+  --paper-foreground: oklch(0.98 0.002 250);
+}
+
+[data-theme="b"] {
+  --background: oklch(1 0 0);
+  --surface: oklch(0.972 0.004 260);
+  --elevated: oklch(0.95 0.005 260);
+  --foreground: oklch(0.19 0.016 265);
+  --muted: oklch(0.94 0.005 260);
+  --muted-foreground: oklch(0.52 0.014 262);
+  --accent: oklch(0.45 0.2 268);
+  --accent-foreground: oklch(0.99 0 0);
+  --support: oklch(0.92 0.05 240);
+  --detail: oklch(0.75 0.09 268);
+  --border: oklch(0.2 0.01 265 / 11%);
+  --paper: oklch(0.2 0.07 266);
+  --paper-deep: oklch(0.15 0.06 266);
+  --paper-foreground: oklch(0.98 0.002 250);
+}
+
+[data-theme="c"] {
+  --background: oklch(0.995 0.003 90);
+  --surface: oklch(0.972 0.006 85);
+  --elevated: oklch(0.95 0.008 85);
+  --foreground: oklch(0.2 0.01 60);
+  --muted: oklch(0.94 0.006 85);
+  --muted-foreground: oklch(0.52 0.012 70);
+  --accent: oklch(0.42 0.09 175);
+  --accent-foreground: oklch(0.99 0 0);
+  --support: oklch(0.92 0.05 165);
+  --detail: oklch(0.75 0.07 170);
+  --border: oklch(0.2 0.01 70 / 12%);
+  --paper: oklch(0.24 0.03 170);
+  --paper-deep: oklch(0.18 0.03 170);
+  --paper-foreground: oklch(0.98 0.004 85);
+}
+
+:root {
+  --rail: oklch(0.2 0.01 275 / 9%);
+  --hl-blue: oklch(0.94 0.025 265);
+
+  --ink: oklch(0.155 0.003 275);
+  --ink-foreground: oklch(0.97 0.002 250);
+  --ink-muted: oklch(0.72 0.005 275);
+  --ink-border: oklch(1 0 0 / 12%);
+
+  --font-display-family: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans-family: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --font-mono-family: "Geist Mono", ui-monospace, monospace;
+
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --dur-micro: 180ms;
+  --dur-short: 300ms;
+  --dur-medium: 500ms;
+  --dur-long: 800ms;
+  --dur-cinematic: 1200ms;
+}
+
+[data-type="b"] {
+  --font-display-family: "Cormorant Garamond", Georgia, serif;
+}
+
+[data-type="c"] {
+  --font-display-family: "Geist", Arial, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans-family);
+  }
+
+  ::selection {
+    background: var(--support);
+    color: var(--foreground);
+  }
+}
+
+@utility label-mono {
+  font-family: var(--font-sans-family);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+@utility display {
+  font-family: var(--font-display-family);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+@utility display-italic {
+  font-family: var(--font-display-family);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+@utility mark-mint {
+  background: var(--support);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.02em 0.12em;
+}
+
+@utility grid-field {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+@utility grain {
+  position: relative;
+}
+
+@utility hairline-x {
+  background-image: linear-gradient(to right, var(--border) 1px, transparent 1px);
+  background-size: 12.5% 100%;
+}
+
+/* Streamline-style page rails: vertical column hairlines behind everything */
+@utility page-rails {
+  background-image:
+    linear-gradient(to right, var(--rail) 1px, transparent 1px),
+    linear-gradient(to right, var(--rail) 1px, transparent 1px);
+  background-position:
+    0 0,
+    100% 0;
+  background-size:
+    1px 100%,
+    1px 100%;
+  background-repeat: no-repeat;
+}
+
+@utility hi-blue {
+  position: relative;
+  background: var(--hl-blue);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.04em 0.22em;
+  color: var(--accent);
+}
+
+@utility hi-mint {
+  position: relative;
+  background: var(--support);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.04em 0.18em;
+}
+
+@utility ocean {
+  background-color: oklch(0.55 0.09 200);
+  background-image:
+    radial-gradient(120% 90% at 15% 10%, oklch(0.28 0.06 235) 0%, transparent 60%),
+    radial-gradient(100% 80% at 85% 15%, oklch(0.82 0.09 195) 0%, transparent 55%),
+    radial-gradient(120% 100% at 60% 100%, oklch(0.7 0.14 160) 0%, transparent 60%),
+    repeating-linear-gradient(
+      104deg,
+      oklch(1 0 0 / 6%) 0px,
+      oklch(1 0 0 / 6%) 1px,
+      transparent 1px,
+      transparent 5px
+    ),
+    linear-gradient(150deg, oklch(0.4 0.08 230), oklch(0.72 0.12 175));
+}
+
+@utility checker {
+  background-image:
+    linear-gradient(to right, oklch(0.2 0.01 275 / 6%) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.2 0.01 275 / 6%) 1px, transparent 1px);
+  background-size: 9px 9px;
+}
+
+@utility soft-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px oklch(0.2 0.02 275 / 4%), 0 12px 40px -24px oklch(0.2 0.05 275 / 22%);
+}
+
+
+@utility reveal-mask {
+  transition:
+    opacity var(--dur-long) var(--ease-expo),
+    transform var(--dur-long) var(--ease-expo);
+  transform: translateY(18px);
+  opacity: 0;
+}
+
+@utility reveal-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes qb-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes qb-pulse-line {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes qb-dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes qb-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Ruler tick band used above/below dark sections. */
+@utility tick-rule {
+  height: 26px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--ink-border) 0px,
+    var(--ink-border) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+}
+
+/* Vertical hairline stripe panel used in the timeline cards. */
+@utility stripes {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--border) 0px,
+    var(--border) 1px,
+    transparent 1px,
+    transparent 19px
+  );
+}
+
+/* Soft blue horizon gradient for the "tomorrow" card. */
+@utility horizon {
+  background-image:
+    radial-gradient(120% 140% at 8% 50%, oklch(1 0 0) 0%, transparent 55%),
+    linear-gradient(100deg, oklch(0.93 0.03 245) 0%, oklch(0.68 0.15 250) 55%, oklch(0.45 0.2 262) 100%);
+}
+
+/* ---------------- Motion kit ---------------- */
+
+@keyframes qb-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes qb-shimmer {
+  from { background-position: -160% 0; }
+  to { background-position: 260% 0; }
+}
+
+@keyframes qb-ring {
+  0% { transform: scale(0.8); opacity: 0.55; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+@keyframes qb-drift {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(2%, -3%, 0) scale(1.05); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+@utility anim-float {
+  animation: qb-float 6s var(--ease-in-out) infinite;
+}
+
+@utility anim-drift {
+  animation: qb-drift 18s var(--ease-in-out) infinite;
+}
+
+@utility anim-ring {
+  animation: qb-ring 2.4s var(--ease-out) infinite;
+}
+
+/* Lift + shadow on hover, used on every card surface. */
+@utility hover-lift {
+  transition:
+    transform 520ms var(--ease-expo),
+    box-shadow 520ms var(--ease-expo),
+    border-color 320ms var(--ease-out),
+    background-color 320ms var(--ease-out);
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px -32px color-mix(in oklab, var(--foreground) 45%, transparent);
+}
+
+/* Animated underline sweep for inline links. */
+@utility sweep-link {
+  position: relative;
+}
+.sweep-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 460ms var(--ease-expo);
+}
+.sweep-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Light sheen sweeping across a surface on hover. */
+@utility sheen {
+  position: relative;
+  overflow: hidden;
+}
+.sheen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    color-mix(in oklab, var(--accent) 14%, transparent) 50%,
+    transparent 70%
+  );
+  background-size: 220% 100%;
+  opacity: 0;
+  transition: opacity 300ms var(--ease-out);
+  pointer-events: none;
+}
+.sheen:hover::before {
+  opacity: 1;
+  animation: qb-shimmer 1.3s var(--ease-out);
+}
