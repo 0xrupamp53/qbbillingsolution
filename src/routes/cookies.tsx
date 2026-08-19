@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Prose } from "@/components/qb/Shell";
+import { LegalContact, Prose } from "@/components/qb/Shell";
 import { COMPANY } from "@/lib/site";
 
 export const Route = createFileRoute("/cookies")({
@@ -41,6 +41,7 @@ export const Route = createFileRoute("/cookies")({
         You can clear site storage at any time through your browser settings without
         affecting your ability to use the site.
       </p>
+      <LegalContact />
     </Prose>
   ),
 });

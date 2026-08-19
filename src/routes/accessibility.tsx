@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Prose } from "@/components/qb/Shell";
+import { LegalContact, Prose } from "@/components/qb/Shell";
 
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
@@ -37,9 +37,10 @@ export const Route = createFileRoute("/accessibility")({
       </p>
       <h2>Feedback</h2>
       <p>
-        If any part of this site creates a barrier for you, tell us through the project
-        intake and we will fix it.
+        If any part of this site creates a barrier for you, contact us using the company
+        details below and we will work to fix it.
       </p>
+      <LegalContact />
     </Prose>
   ),
 });

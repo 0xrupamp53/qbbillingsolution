@@ -3,6 +3,7 @@ import { Nav } from "./Nav";
 import { Footer } from "./Footer";
 import { PrimaryCta } from "./home";
 import { Reveal } from "./motion-primitives";
+import { COMPANY } from "@/lib/site";
 
 export function PageHeader({
   index,
@@ -75,5 +76,25 @@ export function Prose({ title, children }: { title: string; children: ReactNode 
         </div>
       </section>
     </Page>
+  );
+}
+
+export function LegalContact() {
+  return (
+    <>
+      <h2>Company contact details</h2>
+      <address className="not-italic">
+        {COMPANY.legalName} (trading as {COMPANY.name})<br />
+        {COMPANY.registeredAddress.address}<br />
+        {COMPANY.registeredAddress.city}, {COMPANY.registeredAddress.region}<br />
+        {COMPANY.registeredAddress.postalCode}<br />
+        {COMPANY.registeredAddress.country}
+      </address>
+      <p>
+        Email: <a className="text-accent" href={`mailto:${COMPANY.contactEmail}`}>{COMPANY.contactEmail}</a><br />
+        Phone: <a className="text-accent" href={`tel:${COMPANY.contactPhone}`}>{COMPANY.contactPhone}</a><br />
+        Company number: {COMPANY.companyNumber}
+      </p>
+    </>
   );
 }

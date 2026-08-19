@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Prose } from "@/components/qb/Shell";
+import { LegalContact, Prose } from "@/components/qb/Shell";
 import { COMPANY } from "@/lib/site";
 
 export const Route = createFileRoute("/terms")({
@@ -46,6 +46,7 @@ export const Route = createFileRoute("/terms")({
         Submitting a project brief does not create an engagement. Work begins only under
         a separately agreed written contract and statement of work.
       </p>
+      <LegalContact />
       <h2>Intellectual property</h2>
       <p>
         The design, code and content of this website belong to the company unless stated

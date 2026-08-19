@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Prose } from "@/components/qb/Shell";
+import { LegalContact, Prose } from "@/components/qb/Shell";
 import { COMPANY } from "@/lib/site";
 
 export const Route = createFileRoute("/privacy")({
@@ -57,6 +57,7 @@ export const Route = createFileRoute("/privacy")({
         Contact details for data requests are published in the site's company contact
         details.
       </p>
+      <LegalContact />
     </Prose>
   ),
 });
