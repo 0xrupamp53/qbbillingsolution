@@ -54,8 +54,8 @@ export const Route = createFileRoute("/privacy")({
       <h2>Your rights</h2>
       <p>
         You may request access to, correction of, or deletion of your personal data.
-        Contact details for data requests are published once the company's operational
-        contact address is confirmed.
+        Contact details for data requests are published in the site's company contact
+        details.
       </p>
     </Prose>
   ),

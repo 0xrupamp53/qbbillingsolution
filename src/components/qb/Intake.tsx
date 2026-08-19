@@ -128,8 +128,8 @@ export function Intake() {
   }
 
   return (
-    <div className="grid gap-px border border-border bg-border lg:grid-cols-[1.4fr_1fr]">
-      <div className="bg-background p-8 md:p-14">
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-px border border-border bg-border lg:grid-cols-[1.4fr_1fr]">
+      <div className="min-w-0 bg-background p-8 md:p-14">
         <div className="label-mono">Step {String(step + 1).padStart(2, "0")} / 07</div>
 
         <div className="mt-10 min-h-[320px]">
@@ -240,7 +240,7 @@ export function Intake() {
         </div>
       </div>
 
-      <aside className="bg-surface p-8 md:p-14">
+      <aside className="min-w-0 bg-surface p-8 md:p-14">
         <div className="label-mono">Project / 001</div>
         <div className="mt-10 space-y-5">
           {BLUEPRINT.map((b, i) => (

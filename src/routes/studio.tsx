@@ -63,6 +63,12 @@ function StudioPage() {
             { label: "Structure", value: COMPANY.structure },
             { label: "Jurisdiction", value: COMPANY.jurisdiction },
             {
+              label: "Registered office",
+              value: `${COMPANY.registeredAddress.address}, ${COMPANY.registeredAddress.city}, ${COMPANY.registeredAddress.region}, ${COMPANY.registeredAddress.postalCode}`,
+            },
+            { label: "Phone", value: COMPANY.contactPhone },
+            { label: "Email", value: COMPANY.contactEmail },
+            {
               label: "Incorporated",
               value: `${COMPANY.incorporationDate}, under the ${COMPANY.statute}`,
             },

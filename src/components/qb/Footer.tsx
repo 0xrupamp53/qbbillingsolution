@@ -88,6 +88,15 @@ export function Footer() {
                   {COMPANY.contactEmail}
                 </a>
               ) : null}
+              <a href={`tel:${COMPANY.contactPhone}`} className="mt-2 block text-[0.95rem] text-accent">
+                {COMPANY.contactPhone}
+              </a>
+              <address className="mt-5 not-italic text-[0.82rem] leading-relaxed text-muted-foreground">
+                {COMPANY.registeredAddress.address}<br />
+                {COMPANY.registeredAddress.city}, {COMPANY.registeredAddress.region}<br />
+                {COMPANY.registeredAddress.postalCode}<br />
+                {COMPANY.registeredAddress.country}
+              </address>
             </div>
           </div>
 

@@ -14,8 +14,15 @@ export const COMPANY = {
   descriptor: "Product Engineering / Digital Systems",
   positioning:
     "We design and engineer the digital products, software and intelligent systems that help businesses operate, sell and scale.",
-  // Supplied before production via VITE_CONTACT_EMAIL.
-  contactEmail: import.meta.env["VITE_CONTACT_EMAIL"] ?? "",
+  contactEmail: import.meta.env["VITE_CONTACT_EMAIL"] ?? "info@qbbillingsolution.com",
+  contactPhone: "+1 18005767798",
+  registeredAddress: {
+    country: "United Kingdom of Great Britain and Northern Ireland",
+    city: "Kirkcaldy",
+    address: "63 Orkney Pl",
+    region: "Fife",
+    postalCode: "KY1 3DZ",
+  },
 } as const;
 
 export const NAV = [

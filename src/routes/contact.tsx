@@ -67,12 +67,20 @@ function ContactPage() {
           />
         </CardGrid>
         {COMPANY.contactEmail ? (
-          <p className="mt-8 text-sm text-muted-foreground">
-            Prefer email?{" "}
-            <a className="sweep-link text-accent" href={`mailto:${COMPANY.contactEmail}`}>
-              {COMPANY.contactEmail}
-            </a>
-          </p>
+          <div className="mt-8 space-y-2 text-sm text-muted-foreground">
+            <p>
+              Prefer email?{" "}
+              <a className="sweep-link text-accent" href={`mailto:${COMPANY.contactEmail}`}>
+                {COMPANY.contactEmail}
+              </a>
+            </p>
+            <p>
+              Call us at{" "}
+              <a className="sweep-link text-accent" href={`tel:${COMPANY.contactPhone}`}>
+                {COMPANY.contactPhone}
+              </a>
+            </p>
+          </div>
         ) : null}
       </Section>
     </Page>
