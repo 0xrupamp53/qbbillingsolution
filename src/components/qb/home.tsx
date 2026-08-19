@@ -1046,7 +1046,7 @@ const TIMELINE = [
   },
   {
     title: "Now with QB",
-    line: "Product, design, engineering, intelligence and infrastructure delivered as one system — understood, built and owned by you.",
+    line: "Strategy, design, engineering, intelligence and growth delivered as one system — understood, built and owned by you.",
     tone: "stripes" as const,
   },
   {

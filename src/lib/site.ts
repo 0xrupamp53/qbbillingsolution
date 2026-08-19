@@ -137,7 +137,7 @@ export const STATS = [
   {
     value: "01",
     label: "One accountable team",
-    line: "Product, design and engineering in the same room, on the same system.",
+    line: "Strategy, design, engineering and growth in the same room, on the same system.",
   },
   {
     value: "05",

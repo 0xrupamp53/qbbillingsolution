@@ -6,7 +6,7 @@ import { CAPABILITIES, TECHNOLOGY } from "@/lib/site";
 
 const TITLE = "Services — QB Billing Solution";
 const DESCRIPTION =
-  "Product strategy, design, software engineering, AI and infrastructure — delivered by one team from discovery to launch.";
+  "Product strategy, UX/UI design, software engineering, AI, infrastructure and digital marketing — delivered by one team from discovery to growth.";
 
 export const Route = createFileRoute("/capabilities")({
   head: () => ({
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/capabilities")({
       { property: "og:title", content: TITLE },
       {
         property: "og:description",
-        content: "Product, design, engineering, intelligence and infrastructure.",
+        content: "Product strategy, design, engineering, intelligence, infrastructure and digital marketing.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/capabilities" },
